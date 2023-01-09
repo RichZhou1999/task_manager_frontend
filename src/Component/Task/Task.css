@@ -1,0 +1,15 @@
+.task_frame{
+    border-radius: 20px;
+    padding:1vw;
+    border: 0.3vw solid;
+    /* width: 30vw; */
+    color:black;
+    margin:2vh;
+    /* display:flex;
+    justify-content: space-between; */
+    
+}
+.span_type{
+    padding:2vh;
+    /* padding-bottom: 5vh; */
+}

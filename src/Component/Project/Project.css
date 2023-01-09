@@ -1,0 +1,42 @@
+.project_title_position{
+    
+    display: flex;
+    justify-content: center;
+    margin:2vh;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: 7.5% 40% 5% 40% 7.5%;
+    grid-gap:0px;
+  }
+
+.grid_item1{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  grid-gap:10px;
+}
+.grid_item2{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap:10px;
+}
+.project_button_div{
+  display:flex;
+  justify-content: center;
+  margin:1vh;
+  padding:1vh;
+}
+.task_type_word{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}

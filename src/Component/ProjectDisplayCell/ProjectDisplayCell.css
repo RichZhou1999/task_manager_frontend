@@ -1,0 +1,10 @@
+.display_cell{
+    position:relative;
+    left:25vw;
+    display:flex;
+    justify-content: space-between;
+    border: 0.3vw solid;
+    padding:2vh;
+    width:50%;
+    margin:3vh;
+}

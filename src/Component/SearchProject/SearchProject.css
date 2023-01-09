@@ -1,0 +1,7 @@
+.search_frame{
+    display:flex;
+    justify-content: center;
+    margin-top: 3vh;
+    /* position:relative;
+    left:25vw; */
+}

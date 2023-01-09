@@ -1,0 +1,6 @@
+.img_type{
+    width:30vw;
+    object-fit:cover;
+    border-radius:50%;
+    /* justify-content: center; */
+}

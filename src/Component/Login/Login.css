@@ -1,0 +1,38 @@
+.account_textfield{
+    position:absolute;
+    height:"20vh";
+    width:"60%";
+    /* top:"20vh";
+    left:"30vw"; */
+    margin:10px;
+}
+
+.password_textfield{
+    position:absolute;
+    margin:10px;
+    height:"10vh";
+    width:"60vw";
+    /* top:"50vh";
+    left:"30vw"; */
+}
+.login{
+    position:absolute;
+    display:flex;
+    top:30%;
+    width:100%;
+    /* border: 3px solid hsl(85, 68%, 40%); */
+    justify-content:center;
+    /* align-items:center; */
+    /* min-height:100vh; */
+}
+.login_submit{
+    position:relative;
+}
+.login_title{
+    font-size: 5vw;
+}
+.login_title_div{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}

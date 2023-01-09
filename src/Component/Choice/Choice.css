@@ -1,0 +1,21 @@
+.choice_frame{
+    position: absolute;
+    display:flex;
+    top:30%;
+    width:100%;
+    justify-content: center;
+}
+.choice{
+    font-size: 5vh;
+    margin: 1vw;
+    border-radius: 20px;
+    padding:5vw;
+    border: 0.3vw solid;
+}
+.choice_title{
+    text-align: center;
+}
+.setting_type{
+    /* margin:10vh;
+    padding:5vh */
+}
