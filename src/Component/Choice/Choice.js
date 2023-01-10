@@ -5,6 +5,8 @@ import axios from 'axios';
 import { ItemContext } from "../../App";
 import { unstable_composeClasses } from "@mui/material";
 import Setting from "../Setting/Setting";
+import {AiFillAlipaySquare, AiFillBackward} from 'react-icons/ai';
+import Button from '@mui/material/Button';
 
 const Choice = ()=>{
     const {userID, setUserID,projectID, setProjectID,
@@ -14,7 +16,11 @@ const Choice = ()=>{
           setPortraitLink} 
           = React.useContext(ItemContext);
     const [res, setRes] = React.useState("")
-
+    
+    const backPage = ()=>{
+        setgoBackState(true)
+    }
+    const [gobackState, setgoBackState] = React.useState(false)
     // const fetchPortaritLink= async()=>{
     //     // console.log(`${process.env.REACT_APP_SERVER_URL}/getUserPortraitLink/${userID}`)
     //     await axios.get(`${process.env.REACT_APP_SERVER_URL}/getUserPortraitLink/${userID}`)
@@ -36,6 +42,7 @@ const Choice = ()=>{
         setProjectID(response.data);
         setProgressData([])
         setFinishedData([])
+        
         changeTitle("")
     }
 
@@ -82,7 +89,14 @@ const Choice = ()=>{
             // setPortraitLink(link)
             navigate("/setting")
         }
-    })
+        if (gobackState == true){
+            setgoBackState(false)
+            setProgressData([])
+            setFinishedData([])
+            setUserID("")
+            navigate("/")
+        }
+    },[gobackState,choiceMode])
     return(
         <>
         <div className="setting_type">
@@ -94,6 +108,7 @@ const Choice = ()=>{
             <span className="choice" onClick={(e)=>{handle_new_project_click()}}> New Project</span>
             <span className="choice" onClick={(e)=>{handle_load_project_click()}}> Load Project</span>
         </div>
+        <Button variant = "contained" startIcon={<AiFillBackward />} color="primary" target="__blank" className="project_save" onClick={(e)=>backPage()} style={{position:"absolute",right:"0px"}}> Back </Button>
         </>
     )
 

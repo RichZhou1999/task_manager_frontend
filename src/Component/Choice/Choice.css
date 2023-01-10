@@ -1,7 +1,7 @@
 .choice_frame{
     position: absolute;
     display:flex;
-    top:30%;
+    top:40%;
     width:100%;
     justify-content: center;
 }
